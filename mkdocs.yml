@@ -50,9 +50,12 @@ pages:
   - Companion Applications:
     - Intro: 'dev/app/app.md'
     - Pymavlink: 'dev/app/pymavlink.md'
-    - Mavlink: 'dev/app/mavlink.md'
     - Dronekit: 'dev/app/dronekit.md'
+    - MavProxy: 'dev/app/pymavproxy.md'
+    - WebSocket: 'dev/app/websockets.md'
+    - MQTT: 'dev/app/mqtt.md'
     - ROS: 'dev/app/ros.md'
+    - Peripherals: 'dev/app/peripherals.md'
   - Camera: 'dev/camera.md'
   - Yocto Project:
     - Intro: 'dev/yocto/yocto.md'
