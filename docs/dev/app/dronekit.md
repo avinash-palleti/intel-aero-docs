@@ -1,6 +1,6 @@
-# Helloworld in Dronekit
+# Hello World in Dronekit
 
-It’s important to know the basics of MAVLINK, as it the base of all communications with the Flight Controllers. But coding frames with python-mavlink is not developer friendly. DroneKit, developed by [3D Robotics](https://3dr.com/), is one of the friendly python abstractions available under Apache v2 Licence : [python.dronekit.io](http://python.dronekit.io/) To install on Intel Aero:
+It’s important to know the basics of [mavlink](https://mavlink.io/en/), as it is the base of all communications with the Flight Controllers. [Dronekit](python.dronekit.io) is an abstraction on top of mavlink to make it very user friendly. To install on Intel Aero:
 
 ```console
 # pip install dronekit
@@ -9,8 +9,7 @@ It’s important to know the basics of MAVLINK, as it the base of all communicat
 !!! Note
     It is advised to unplug the propellers before running below code.
 
-Below is the sample code which make use of DroneKit and arm the motors and 
-disarm after 5s,
+Below is the sample code which makes use of DroneKit and arm the motors and disarm after 5s.
 
 ```python
 #!/usr/bin/python
@@ -29,3 +28,4 @@ time.sleep(5)
 print "Disarming"
 vehicle.armed   = False
 ```
+Some more examples using Dronekit can be found [here](http://python.dronekit.io/examples/)

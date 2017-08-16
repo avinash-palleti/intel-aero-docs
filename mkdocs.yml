@@ -41,6 +41,7 @@ pages:
   - Camera: 'getting-started/camera.md'
 - Development:
   - Intro: 'dev/dev.md'
+  - Training Material: 'dev/training-material.md'
   - Flight Stacks: 'dev/flight-stacks.md'
   - Container:
     - Intro: 'dev/container/container.md'
@@ -51,7 +52,7 @@ pages:
     - Intro: 'dev/app/app.md'
     - Pymavlink: 'dev/app/pymavlink.md'
     - Dronekit: 'dev/app/dronekit.md'
-    - MavProxy: 'dev/app/pymavproxy.md'
+    - MavProxy: 'dev/app/mavproxy.md'
     - WebSocket: 'dev/app/websockets.md'
     - MQTT: 'dev/app/mqtt.md'
     - ROS: 'dev/app/ros.md'

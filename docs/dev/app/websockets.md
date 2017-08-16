@@ -45,7 +45,7 @@ def message_received(client, server, message):
     server.run_forever()
 ```
 Below is the optional client code, running on a remote computer (change the 
-IP 192.168.0.100 with Aero's IP on YOUR NETWORK):
+IP 192.168.0.100 with Aero's IP on your network):
 ```python
 #!/usr/bin/python
 from websocket import create_connection
@@ -55,3 +55,4 @@ result = ws.recv()
 print("Received '%s'" % result)
 ws.close()
 ```
+Some more examples which uses websockets can be found [here](https://github.com/01org/mavlink-router/tree/master/examples).

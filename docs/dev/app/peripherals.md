@@ -1,11 +1,10 @@
 # Intel Aero board LEDs
 
-There's a multicolor LED on top of the board (if the board is in the enclosure, you can see the light from the white cable hole), and an orange LED under the board. As the LEDs are enclosed in the Ready-To-Fly design, it is not very useful. But if you build your own drone design or enclosing you may want to let the LEDs visible and use them. To install the IO module:
-
+There's a multicolor LED on top of the board (if the board is in the enclosure, you can see the light from the white cable hole), and an orange LED under the board. As the LEDs are enclosed in the Ready-To-Fly design, it is not very useful. But if you build your own drone design or enclosing you may want to let the LEDs visible and use them.
+To install IO module on Intel Aero,
 ```console
 # pip install python-periphery
 ```
-
 Below is the sample code to test all LED colors,
 ```python
 #!/usr/bin/python
@@ -41,6 +40,9 @@ gpio.write(bool(0))
 gpio.close()
 ```
 
-# CAN
-
-The Intel Aero Compute Board includes a MCP2515 CAN controller and MCP2562 CAN transceiver. The controller is connected to the Atom processor via the SPI interface on bus 1 (SPI1) chip select 0 (CS0). It can be accessed via spidev as /dev/spidev1.0. [Python spidev libraries](https://github.com/doceme/py-spidev)
+You can find sample shell script which programs LED colors at below path on Intel Aero board
+```console
+# vi /usr/bin/aero-led-ctrl
+```
+!!! Warning
+    These LEDs are used by system components to notify about the current state.
